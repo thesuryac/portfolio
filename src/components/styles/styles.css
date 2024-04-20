@@ -1,0 +1,42 @@
+.scroll {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(
+    0deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+.scroll-slide {
+  display: inline-flex;
+  flex-direction: column;
+  animation: animate 30s linear infinite;
+}
+.scroll-slide-reverse {
+  display: inline-flex;
+  flex-direction: column;
+  animation: animate2 30s linear infinite;
+}
+
+@keyframes animate {
+  form {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
