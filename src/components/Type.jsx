@@ -10,7 +10,7 @@ const Type = () => {
             "Software Developer",
             "Front-end Developer",
             "Backend Developer",
-            "Full-stack Developer",
+            "Machine Learning Engineer",
           ]}
           loop={5}
           cursor
