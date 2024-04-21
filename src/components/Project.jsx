@@ -3,7 +3,7 @@ import React from "react";
 const Project = ({ img, name, gitHub, liveLink, active, index }) => {
   return (
     <div
-      className={`sm:h-[90%] sm:w-[90%] w-[95%] h-[80%] bg-[#0011ff4f] mx-auto rounded-lg backdrop:blur-3xl ${
+      className={`sm:h-[90%] sm:w-[90%] w-[95%] h-[80%] bg-[#0011ff4f] mx-auto rounded-lg scroll-smooth backdrop:blur-3xl ${
         active === index ? "block" : "hidden"
       } `}
     >
