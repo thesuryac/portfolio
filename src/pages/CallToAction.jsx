@@ -22,7 +22,7 @@ const CallToAction = () => {
     setStatus("loading");
     Emailjs.sendForm("service_10bssoc", "template_zdebofq", form.current).then(
       (result) => {
-        setStatus("Mail received");
+        setStatus("Thanks for reviewing!");
       },
       (error) => {
         console.log(error.text);
@@ -70,16 +70,21 @@ const CallToAction = () => {
               value="Send"
               className=" sm:h-20 h-12 w-full bg-blue-800 text-white sm:text-xl cursor-pointer md:text-2xl lg:text-3xl rounded-lg font-montserrat flex justify-center items-center gap-6"
             />
-            <div className="h-12 w-full flex items-center justify-center sm:pt-5 pt-1">
+            <div className="h-12 w-full flex items-center justify-center  pt-1">
+              {status == "" && status !== "loading" && (
+                <p className="text-white sm:text-xl h-12 w-full bg-[#ffffff38] text-center align-middle  pt-3 font-montserrat font-semibold border-blue-500 border-b-4 rounded-lg">
+                  leave the comments above
+                </p>
+              )}
               {status === "loading" && (
-                <p className="text-white sm:h-20 sm:text-xl h-12 w-full border-b bg-[#ffffff38] text-center align-middle sm:pt-5 pt-3 font-montserrat font-semibold border-yellow-500 rounded-lg">
+                <p className="text-white sm:text-xl h-12 w-full  bg-[#ffffff38] text-center align-middle  pt-3 font-montserrat font-semibold border-b-4 border-yellow-500 rounded-lg">
                   loading...
                 </p>
               )}
               {status != "" && status !== "loading" && (
                 <p
-                  className={`text-white sm:h-20 sm:text-xl h-12 border-b w-full bg-[#ffffff38] text-center align-middle sm:pt-5 pt-3 rounded-lg font-montserrat font-semibold ${
-                    status === "Mail received"
+                  className={`text-white sm:text-xl h-12  w-full bg-[#ffffff38] text-center align-middle  pt-3 rounded-lg border-b-4 font-montserrat font-semibold ${
+                    status === "Thanks for reviewing!"
                       ? "border-green-600"
                       : "border-red-600"
                   }`}

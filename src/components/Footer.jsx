@@ -6,8 +6,7 @@ const Footer = () => {
       </small>
       <p className="sm:text-2xl text-sm font-montserrat font-normal text-white sm:w-[70%] w-[90%] text-center cursor-default">
         <span className="font-bold">About this website : </span>
-        built with React, TailwindCss, Framer Motion, React Email & Resend,
-        Render hosting
+        built with React, TailwindCss, Framer Motion, EmailJs, Render hosting.
       </p>
     </footer>
   );
