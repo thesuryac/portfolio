@@ -1,5 +1,5 @@
 import React from "react";
-import { Cursor, Typewriter } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 
 const Type = () => {
   return (
@@ -10,7 +10,7 @@ const Type = () => {
             "Software Developer",
             "Front-end Developer",
             "Backend Developer",
-            "Machine Learning Engineer",
+            "Full-stack Developer",
           ]}
           loop={5}
           cursor
