@@ -38,11 +38,11 @@ const About = () => {
         </div>
         <div className="bg-[#1d4fd84a] rounded-lg flex flex-col items-center cursor-default justify-around px-3 mx-auto w-[90%] text-white hover:text-black hover:scale-110 hover:bg-blue-600 border-b-8 border-blue-400 transition-all">
           <h3 className="sm:text-xl md:text-2xl lg:text-4xl font-montserrat font-bold">
-            ML Engineer
+            FullStack Developer
           </h3>
           <hr className="border border-blue-900 w-[90%] sm:block hidden" />
           <p className="sm:block hidden sm:text-sm md:text-xl lg:text-2xl font-montserrat font-normal">
-            I have Builds and implements ml systems using data and algorithms.
+            I have experience in building robust full app using MERN stack.
           </p>
         </div>
       </div>

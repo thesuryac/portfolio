@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Footer from "../components/Footer";
 import SocialMedia from "../components/SocialMedia";
-import { IoIosSend } from "react-icons/io";
+
 import Emailjs from "@emailjs/browser";
 
 const CallToAction = () => {
@@ -72,7 +72,7 @@ const CallToAction = () => {
               )}
               {status === "loading" && (
                 <p className="text-white sm:text-xl h-12 w-full  bg-[#ffffff38] text-center align-middle  pt-3 font-montserrat font-semibold border-b-4 border-yellow-500 rounded-lg">
-                  loading...
+                  sending mail...
                 </p>
               )}
               {status != "" && status !== "loading" && (
