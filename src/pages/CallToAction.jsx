@@ -8,19 +8,13 @@ const CallToAction = () => {
   const form = useRef(null);
   const [status, setStatus] = useState("");
 
-  useEffect(() => {
-    (function () {
-      // https://dashboard.emailjs.com/admin/account
-      Emailjs.init({
-        publicKey: "Q6DogVq0V5k93Lvle",
-      });
-    })();
-  }, []);
-
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(form.current);
     setStatus("loading");
-    Emailjs.sendForm("service_10bssoc", "template_zdebofq", form.current).then(
+    Emailjs.sendForm("service_10bssoc", "template_zdebofq", form.current, {
+      publicKey: "Q6DogVq0V5k93Lvle",
+    }).then(
       (result) => {
         setStatus("Thanks for reviewing!");
       },
@@ -45,16 +39,16 @@ const CallToAction = () => {
             className=" h-full w-full flex  flex-col justify-around items-center sm:gap-10 md:gap-3"
           >
             <input
+              name="user_name"
               type="text"
               className="sm:h-20 h-12 w-full font-montserrat text-xl text-white sm:p-4 p-1  outline-blue-800 bg-[#ffffff38] rounded-lg"
               placeholder="Name"
-              name="user_name"
             />
             <input
+              name="user_email"
               type="email"
               className="sm:h-20 h-12 w-full font-montserrat text-xl text-white sm:p-4 p-1 outline-blue-800 bg-[#ffffff38] rounded-lg"
               placeholder="Email"
-              name="user_email"
             />
             <textarea
               name="message"
