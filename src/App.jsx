@@ -8,7 +8,7 @@ import "./index.css";
 
 const App = () => {
   return (
-    <main className="h-screen sm:w-[97vw] max-w-[1500px] mx-auto  snap-y snap-mandatory  overflow-y-auto no-scrollbar ease-in-out delay-200">
+    <main className="h-screen sm:w-[97vw] max-w-[1500px]  mx-auto  snap-y snap-mandatory  overflow-y-auto no-scrollbar transition-all ease-in-out delay-200">
       <Header />
 
       <div className="snap-center h-screen">

@@ -7,7 +7,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Header = () => {
   const [burger, setBurger] = useState(false);
   return (
-    <div className="h-20 w-screen fixed top-0 backdrop-blur-lg z-50">
+    <div className="h-20 w-full fixed top-0 backdrop-blur-lg z-50">
       <nav className="flex max-w-[1500px] justify-center items-center mx-auto ">
         <Link
           to={"#hero"}
