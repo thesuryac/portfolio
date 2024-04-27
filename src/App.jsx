@@ -8,12 +8,22 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <div className="">
-      <main className="h-auto sm:w-[97vw] max-w-[1500px] mx-auto">
-        <Header />
-        <Hero />
-        <Projects />
-        <About />
-        <CallToAction />
+      <main className="h-screen sm:w-[97vw] max-w-[1500px] mx-auto snap-y snap-mandatory">
+        <div className=" snap-start">
+          <Header />
+        </div>
+        <div className="snap-start">
+          <Hero />
+        </div>
+        <div className="snap-start">
+          <Projects />
+        </div>
+        <div className="snap-start">
+          <About />
+        </div>
+        <div className="snap-start">
+          <CallToAction />
+        </div>
       </main>
     </div>
   );
