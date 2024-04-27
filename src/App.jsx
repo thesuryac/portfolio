@@ -9,19 +9,18 @@ const App = () => {
   return (
     <div className="">
       <main className="h-screen sm:w-[97vw] max-w-[1500px] mx-auto snap-y snap-mandatory">
-        <div className=" snap-start">
-          <Header />
-        </div>
-        <div className="snap-start">
+        <Header />
+
+        <div className="snap-start h-screen">
           <Hero />
         </div>
-        <div className="snap-start">
+        <div className="snap-start h-screen">
           <Projects />
         </div>
-        <div className="snap-start">
+        <div className="snap-start h-screen">
           <About />
         </div>
-        <div className="snap-start">
+        <div className="snap-start h-screen">
           <CallToAction />
         </div>
       </main>
