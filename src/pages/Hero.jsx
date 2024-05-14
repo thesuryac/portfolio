@@ -116,7 +116,7 @@ const Hero = () => {
     <SiPostman size={iconSize} color="fe6c37" />,
   ];
   return (
-    <section id="hero" className="h-screen w-full pt-12">
+    <section id="hero" className="h-[95%] w-full pt-12 my-auto">
       <div className="grid sm:grid-cols-5 h-5/6 sm:grid-rows-3 grid-rows-3 w-full ">
         <div className=" sm:col-span-3 h-full w-full sm:row-span-3 row-span-2 flex flex-col justify-evenly items-center ">
           <hr className="border-b border-blue-600 w-full" />
@@ -142,17 +142,17 @@ const Hero = () => {
         <div className=" sm:col-span-2 row-span-1 sm:h-full h-auto">
           <div className="grid  grid-cols-3 h-full">
             <div className="h-5/6 my-auto">
-              <div className="sm:h-[70vh] h-[25vh]">
+              <div className="sm:h-[70vh] h-[20vh]">
                 <IconsSlider list={list} />
               </div>
             </div>
             <div className="h-5/6  my-auto">
-              <div className="sm:h-[70vh] h-[25vh]">
+              <div className="sm:h-[70vh] h-[20vh]">
                 <IconsSlider reverse={true} list={list2} />
               </div>
             </div>
             <div className="h-5/6  my-auto">
-              <div className="sm:h-[70vh] h-[25vh]">
+              <div className="sm:h-[70vh] h-[20vh]">
                 <IconsSlider list={list3} />
               </div>
             </div>

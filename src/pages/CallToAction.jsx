@@ -26,7 +26,7 @@ const CallToAction = () => {
   return (
     <section
       id="contact"
-      className="h-screen w-full sm:pt-10 pt-24 mt-10 flex flex-col justify-center items-center gap-3"
+      className="sm:h-screen h-[98%] w-full sm:pt-10 pt-24 mt-10 flex flex-col justify-center items-center gap-3"
     >
       <h1 className="sm:text-8xl md:text-6xl text-4xl font-montserrat font-bold text-white cursor-default">
         Contact Me
@@ -36,7 +36,7 @@ const CallToAction = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className=" h-full w-full flex  flex-col justify-around items-center sm:gap-10 md:gap-3"
+            className=" h-full w-full flex  flex-col justify-around items-center gap-2 sm:gap-10 md:gap-3"
           >
             <input
               name="user_name"

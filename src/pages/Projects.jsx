@@ -34,13 +34,13 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="h-screen w-full flex flex-col overflow-hidden"
+      className="h-[90%] my-auto sm:h-screen w-full flex flex-col overflow-hidden"
     >
       {/* {projects.map((project, index) => (
         <Project key={index} />
       ))} */}
       <div className="h-[10%] w-full"></div>
-      <div className="h-[10%] w-full">
+      <div className="h-[10%] w-full my-5 sm:my-0">
         <h1 className="text-5xl font-montserrat font-bold text-center text-white">
           Projects
         </h1>
